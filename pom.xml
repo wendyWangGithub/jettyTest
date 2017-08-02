@@ -4,6 +4,29 @@
   <artifactId>jettyTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+	<dependencies>
+        <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>4.0.7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+			
+	</dependencies>
+	
   <build>  
         <plugins>  
             <plugin>  
@@ -50,6 +73,8 @@
                     <outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>  
                 </configuration>  
             </plugin>  
-        </plugins>  
+        </plugins> 
+         
+
     </build>  
 </project>
